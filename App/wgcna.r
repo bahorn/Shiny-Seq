@@ -611,7 +611,7 @@ observeEvent(input$go_wgcna_start,
                      print(group_fc)
                      #get the list of transcription factors
                      
-                     TF_list<-read.csv("./www/Transcriptome_TFcat.txt", header = TRUE,sep = "\t",check.names = FALSE,quote = "\"")
+                     TF_list<-read.csv("./www/transcriptome_tfcat.txt", header = TRUE,sep = "\t",check.names = FALSE,quote = "\"")
                      group_fc[[length(group_fc)]]$Transcription_factor<-rep('No',nrow(group_fc[[length(group_fc)]]))
                      print(group_fc)
                      if(as.numeric(organism())==1)#humans

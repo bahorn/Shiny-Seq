@@ -1,5 +1,5 @@
 source("./functions.r")
-source("./PCA.r")
+source("./pca.r")
 source("./gene_count_module.r")
 Module_Batch_effect_UI<-function(id)
 {

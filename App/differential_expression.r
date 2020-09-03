@@ -1,4 +1,4 @@
-source("./gene_count_module.R")
+source("./gene_count_module.r")
 Module_Differential_Expression_UI<-function(id)
 {
   ns<-NS(id)
@@ -26,7 +26,7 @@ Module_Differential_Expression_UI<-function(id)
     bsModal(ns("modalhelpvalue"), "Help for p-value distribution", ns("help_pvalue"),size = "large",
             helpText("Possible histogram versions and their meaning"),
             helpText("Case 1:"),
-            fluidRow(column(5,img(src="p-value1.PNG"))),
+            fluidRow(column(5,img(src="p-value1.png"))),
             helpText("If your p-value distribution looks like the above then 
                      You have (on the surface) a set of well-behaved p-values.
                      That flat distribution along the bottom is all your null p-values, which are uniformly distributed between 0 and 1.

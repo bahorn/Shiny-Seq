@@ -1,4 +1,4 @@
-source("./functions.R")
+source("./functions.r")
 #Module PCA
 #UI component
 #Server component: Calls Pcaplot function from fucntions.R

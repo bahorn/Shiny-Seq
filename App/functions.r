@@ -29,7 +29,7 @@ boxplot_output<-function(edata,pData,col)
   # boxplot.matrix(as.matrix(data),outline=FALSE,xlab='Rows',ylab='Value',col=colors[pheno[,var]],boxwex=0.25,names=lapply(i,function(x) paste('row',x[1])))
   # legend("topright", legend = unique(pheno[,var]),xpd=TRUE, pch = 16, col = colors[unique(pheno[,var])], cex=0.85,inset=0.0005)
   print(head(melt(data)))
-  ggplot(data=melt(data), aes(as.factor(Var2), value,fill=as.factor(Var2))) + geom_boxplot(outlier.shape = NA)+
+  ggplot(data=melt(data), aes(as.factor(var2), value,fill=as.factor(var2))) + geom_boxplot(outlier.shape = NA)+
     labs(x="Samples",y="Gene Counts") 
 }
    

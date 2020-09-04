@@ -25,23 +25,7 @@ More details regarding the app are described in the [manuscript](https://github.
 
 The app is hosted on the website: https://szenitha.shinyapps.io/shiny-seq3/
 
-To run this app locally on your machine, download R or RStudio and run the following commands once to set up the environment:
-
-```
-source("https://bioconductor.org/biocLite.R")
-biocLite("rhdf5","tximport",'DESeq2','clusterProfiler',"org.Hs.eg.db","org.Mm.eg.db","org.Mmu.eg.db","sva","limma","geneplotter",'biomaRt',"pcaGoPromoter","pcaGoPromoter.Mm.mm9","pcaGoPromoter.Hs.hg19","pathview")
-
-install.packages("shiny","shinyBS","shinyjs",'RColorBrewer',"stringr",'formula.tools','data.table','fdrtool',"VennDiagram",'colorspace',"xlsx",'svglite',"visNetwork","V8","ggrepel","ReporteRs","ReporteRsjars")
-
-install.packages("gplots",dependencies = TRUE)
-
-devtools::install_github("ropensci/plotly")
-
-devtools::install_github("rstudio/crosstalk",force=TRUE)
-
-devtools::install_github('rstudio/DT')
-
-```
+To run this app locally on your machine, download R or RStudio and run the `install.r` script to get all the dependencies.
 
 After setting up the environment, download the [App folder](https://github.com/szenitha/Shiny-Seq/tree/master/App). Open [App.r](https://github.com/szenitha/Shiny-Seq/blob/master/App/app.R) file and execute it as a shiny app. Kindly refer to the screenshot below.
 

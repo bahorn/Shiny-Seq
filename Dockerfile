@@ -11,7 +11,10 @@ COPY Makevars /root/.R/Makevars
 COPY install.r /home/rstudio/app/
 RUN Rscript /home/rstudio/app/install.r
 
-COPY App /home/rstudio/app/App
-COPY Data /home/rstudio/app/Data
+COPY src /home/rstudio/app/src
+COPY data /home/rstudio/app/data
 
-CMD  LD_LIBRARY_PATH=/usr/lib/jvm/jre/lib/amd64:/usr/lib/jvm/jre/lib/amd64/default /init
+COPY ./init.r  /home/rstudio/app/init.r
+
+# CMD /init
+CMD ["/bin/bash", "-c", "/home/rstudio/app/init.r"]

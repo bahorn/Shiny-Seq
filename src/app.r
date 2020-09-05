@@ -1069,5 +1069,11 @@ observeEvent(input$pheno_table_columns_selected,{
 
 
 }
+
+
+options(shiny.host = '0.0.0.0')
+options(shiny.port = 8080)
+
+
 shinyApp(ui = ui, server = server)
 

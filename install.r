@@ -4,6 +4,7 @@ BiocManager::install(version = "3.11")
 
 install.packages(
                  c(
+                   "tidyverse",
                    "officer",
                    "gdtools",
                    "devtools",
@@ -22,8 +23,7 @@ install.packages(
                    "visNetwork",
                    "V8",
                    "ggrepel",
-                   "ReporteRs",
-                   "ReporteRsjars"
+                   "pheatmap"
                  )
 )
 
@@ -32,6 +32,9 @@ install.packages("gplots",dependencies=TRUE)
 devtools::install_github("ropensci/plotly")
 devtools::install_github("rstudio/crosstalk",force=TRUE)
 devtools::install_github('rstudio/DT')
+# Deprecated library. Need to move to officer.
+devtools::install_github('davidgohel/ReporteRsjars')
+devtools::install_github('davidgohel/ReporteRs')
 
 BiocManager::install(
                      c(
